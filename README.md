@@ -20,21 +20,68 @@ npm i @babel/cli @babel/core @babel/node @babel/preset-env jest nodemon  --save-
 npm i big.js
 ```
 
-### 3 Run tests 
+### 3 Add commands to package.json
+
+```bash
+"devDependencies": {
+    "@babel/cli": "^7.15.4",
+    "@babel/core": "^7.15.5",
+    "@babel/node": "^7.15.4",
+    "@babel/preset-env": "^7.15.4",
+    "jest": "^27.1.0",
+    "nodemon": "^2.0.12"
+  },
+  "dependencies": {
+    "big.js": "^6.1.1"
+}
+```
+
+
+El archivo `package.json` Debería quedar mas o menos así:
+
+```bash
+{
+  "name": "currency",
+  "version": "1.0.0",
+  "description": "wrapper to manage currencies",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon --exec babel-node index.js",
+    "test": "clear && npm run build && jest",
+    "build": "babel index.js -d dist --source-maps"
+  },
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/cli": "^7.15.4",
+    "@babel/core": "^7.15.5",
+    "@babel/node": "^7.15.4",
+    "@babel/preset-env": "^7.15.4",
+    "jest": "^27.1.0",
+    "nodemon": "^2.0.12"
+  },
+  "dependencies": {
+    "big.js": "^6.1.1"
+}
+```
+
+
+
+### 4 Run tests 
 
 ```bash
 npm test
 ```
 
-### 4 Enjoy!
+### 5 Enjoy!
 
-### 5 Issue me!
+### 6 Issue me!
 
-### 6 Buy me a coffee!
+### 7 Buy me a coffee!
 
-### 7 Kick me!
+### 8 Kick me!
 
-### 8 Laugh!
+### 9 Laugh!
 
 
 ## What will we do

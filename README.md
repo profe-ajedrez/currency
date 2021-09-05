@@ -75,14 +75,6 @@ npm test
 
 ### 5 Enjoy!
 
-### 6 Issue me!
-
-### 7 Buy me a coffee!
-
-### 8 Kick me!
-
-### 9 Laugh!
-
 
 ## What will we do
 

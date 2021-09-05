@@ -62,6 +62,7 @@ El archivo `package.json` Debería quedar mas o menos así:
   },
   "dependencies": {
     "big.js": "^6.1.1"
+  }
 }
 ```
 

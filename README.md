@@ -18,6 +18,7 @@ git clone https://github.com/profe-ajedrez/currency.git
 
 ```bash
 npm i @babel/cli @babel/core @babel/node @babel/preset-env jest nodemon  --save-dev
+npm i -g --save-dev ndb
 npm i big.js
 ```
 

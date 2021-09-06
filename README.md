@@ -2,7 +2,7 @@
 
 
 
-A Code run to demonstrate the power of OOP, SOLID and other monsters while studying currency representation problems in software development.
+A Code run to demonstrate the power of OOP, SOLID and other monsters while checking out currency representation problems in software development.
 
 Pst, a hint, we are using babel, so if something is not working when you try this run, check out [babel](https://babeljs.io)
 

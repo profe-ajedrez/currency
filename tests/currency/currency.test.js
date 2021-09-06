@@ -2,7 +2,7 @@ import { Currency } from "../../lib/b2c6/currency/Currency";
 import { DecimalChantaStorer } from "../../lib/b2c6/storers/DecimalChantaStorer";
 import { BigStorer } from "../../lib/b2c6/storers/BigStorer";
 
-const defaultStorerStrategy = BigStorer;
+const defaultStorerStrategy = DecimalChantaStorer;
 
 test('Testing Instantiating of Currency', () => {
   let chileanPeso = new Currency({
@@ -10,8 +10,8 @@ test('Testing Instantiating of Currency', () => {
     ammount: 575,
     numberStorerFabric: defaultStorerStrategy
   });
-  console.log(`chilean peso: ${chileanPeso.toString()}`);  
-  return;
+
+  expect(chileanPeso.toString()).toBe("575");  
 });
 
 
@@ -33,7 +33,6 @@ test('Testing Currency addition', () => {
   const currencyAddition = chileanPesoPrice.add(otherChileanPesoPrice);
   const currencyIntegerAddition = chileanPesoPrice.add(ammount);
 
-  console.log(`currencyAddition:        ${currencyAddition.toString()}`);
-  console.log(`currencyIntegerAddition: ${currencyIntegerAddition.toString()}`); 
-  return;
+  expect(currencyAddition.toString()).toBe("2000");
+  expect(currencyIntegerAddition.toString()).toBe("2804");  
 });

@@ -2,13 +2,9 @@ import { AbstractArithmetizable } from "../../lib/b2c6/mathematics/AbstractArith
 import { InstanciatingAbstractClassError } from "../../lib/b2c6/errors/Errors";
 
 test('Testing no instantiating of AbstractArithmetizable', () => {
-  try {
-    const abstractInstance = new AbstractArithmetizable();
-  } catch (e) {
-    if (e instanceof InstanciatingAbstractClassError) {
-      console.info("%cSuccess! Coudnt instanciate AbstractArithmetizable", "color:blue;");
-      return;
+  expect(
+    () => { 
+      const abstractInstance = new AbstractArithmetizable(); 
     }
-    throw e;
-  }
+  ).toThrow(InstanciatingAbstractClassError);
 });

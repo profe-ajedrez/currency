@@ -21,24 +21,13 @@ npm i @babel/cli @babel/core @babel/node @babel/preset-env jest nodemon  --save-
 npm i big.js
 ```
 
-### 3 Add commands to package.json
+## Troubleshooting
 
-```bash
-"devDependencies": {
-    "@babel/cli": "^7.15.4",
-    "@babel/core": "^7.15.5",
-    "@babel/node": "^7.15.4",
-    "@babel/preset-env": "^7.15.4",
-    "jest": "^27.1.0",
-    "nodemon": "^2.0.12"
-  },
-  "dependencies": {
-    "big.js": "^6.1.1"
-}
-```
+When things breaks...
 
+### 1 Double check package.json
 
-El archivo `package.json` Debería quedar mas o menos así:
+`package.json` should look's like:
 
 ```bash
 {
@@ -67,6 +56,12 @@ El archivo `package.json` Debería quedar mas o menos así:
 }
 ```
 
+###  2 Re run npm
+
+```bash
+npm i @babel/cli @babel/core @babel/node @babel/preset-env jest nodemon  --save-dev
+npm i big.js
+```
 
 
 ### 4 Run tests 

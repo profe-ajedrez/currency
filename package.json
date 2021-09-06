@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "nodemon --exec babel-node index.js",
-    "test": "clear && npm run build && jest",
+    "test": "clear && npm run build && jest --no-cache --runInBand",
     "build": "babel index.js -d dist --source-maps"
   },
   "author": "",
@@ -16,6 +16,7 @@
     "@babel/node": "^7.15.4",
     "@babel/preset-env": "^7.15.4",
     "jest": "^27.1.0",
+    "ndb": "^1.1.5",
     "nodemon": "^2.0.12"
   },
   "dependencies": {

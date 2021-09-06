@@ -4,6 +4,7 @@ import { BigStorer } from "../../lib/b2c6/storers/BigStorer";
 
 const defaultStorerStrategy = DecimalChantaStorer;
 
+
 test('Testing Instantiating of Currency', () => {
   let chileanPeso = new Currency({
     isoName: "CLP",

@@ -83,3 +83,11 @@ Something in the line of:
 ![currency_coderun](https://user-images.githubusercontent.com/20423399/132140450-80def4be-dedd-4e42-b39d-f7ed6ce15a88.png)
 
 
+## What we did
+
+This is what we could do in the assigned time
+
+![coderundiagram](https://user-images.githubusercontent.com/20423399/132928590-79b9fbc1-97f2-4953-8978-054c1b4015ce.jpg)
+
+
+

@@ -6,6 +6,8 @@ A Code run to demonstrate the power of OOP, SOLID and other monsters while check
 
 Pst, a hint, we are using babel, so if something is not working when you try this run, check out [babel](https://babeljs.io)
 
+Pst, another hint, the dev branch is better documented, so try `git checkout dev` after cloning this repo
+
 ## How To
 
 ### 1 Clone the repo
